@@ -1,0 +1,16 @@
+---
+Date: "12.11.17"
+title: "Assignment 2"
+output: html_notebook
+---
+
+```{r}
+install.packages("plotly")
+library(plotly)
+library(MASS)
+
+colnames(Boston)
+
+plot_ly(Boston, x = ~age, y = ~crim, type = "scatter", size = ~medv, color = ~black)
+```
+
